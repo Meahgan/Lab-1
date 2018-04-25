@@ -55,26 +55,51 @@ span:not(#chircupinc) {
   color: #69696a;
 }
 
-.circles {
-  padding-left: 100px;
+.pinkcircle {
+  position: relative;
+  float: right;
+  bottom: 200px;
+  right: 200px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: rgba(247, 136, 167, 0.6);
 }
 
+.purplecircle {
+  position: relative;
+  float: right;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: rgba(207, 130, 213, 0.6);
+  bottom: 150px;
+  left: 170px;
+}
+
+.orangecircle {
+  position: relative;
+  float: right;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: rgba(247, 193, 162, 0.7);
+  left: 300px;
+  bottom: 50px;
+}
 
 .button {
-  height: 30px;
-  width: 150px;
+  position: relative;
+  width: 100px;
+  height: 50px;
+  border-radius: 60px;
   background-color: black;
-  border-radius: 30px;
   color: white;
-  font-size: 15px;
-  margin-top: 40px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 1px;
-  padding-bottom: 20px;
-}
-
-.ScrollDown {
   text-align: center;
-
+  top: 170px;
+  left: 500px;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 2px;
 }
