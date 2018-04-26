@@ -1,15 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-
 body {
   background-color: #f9fafc;
   font-family: 'Open Sans', sans-serif;
   padding: 10px;
-}
-
-h1 {
-  margin-left: 25px;
-  margin-top: 150px;
 }
 
 header {
@@ -21,19 +15,44 @@ header {
   color: #69696a;
 }
 
-span:not(#chircupinc) {
-  margin-left: 20px;
-  margin-right: 20px;
+#menu {
+  display: flex;
+  justify-content: space-between;
 }
 
-.hireUs {
-  display: inline;
-  height: 50px;
+.chirpusinc {
+  padding-left: 20px;
+  font-weight: bold;
+}
+
+.home {
+  padding-right: 20px;
+}
+
+.work {
+  padding-right: 20px;
+}
+
+.aboutus {
+  padding-right: 20px;
+}
+
+#hireus {
+  display: inline-flex;
+  align-content: center;
   background-color: black;
-  width: 100px;
+  width: 75px;
+  height: 24px;
   color: white;
-  border-radius: 60px;
-  margin-bottom: 30px;
+  border-radius: 25px;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+h1 {
+  margin-left: 25px;
+  margin-top: 150px;
 }
 
 .line {
@@ -47,7 +66,7 @@ span:not(#chircupinc) {
   opacity: .5;
 }
 
-.Info {
+#info {
   display: flex;
   justify-content:flex-start;
   text-align: left;
@@ -89,17 +108,71 @@ span:not(#chircupinc) {
 }
 
 .button {
-  position: relative;
-  width: 100px;
-  height: 50px;
-  border-radius: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: black;
+  height: 40px;
+  width: 100px;
   color: white;
-  text-align: center;
-  top: 170px;
-  left: 500px;
-  padding-top: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 2px;
+  border-radius: 60px;
+  padding: 5px;
+  margin-top: 50px;
+  margin-left: 500px;
 }
+
+/*----media----*/
+
+@media only screen and (max-width: 600px){
+  .line {
+    height: 160px;
+  }
+  .pinkcircle {
+    display: none;
+  }
+  .orangecircle {
+    display: none;
+  }
+  .purplecircle {
+    display: none;
+  }
+  header {
+    flex-direction: column;
+  }
+  #menu {
+    flex-direction: column;
+  }
+  .chirpusinc {
+    padding-bottom: 10px;
+    padding-left: 0px;
+    padding-top: 0px;
+  }
+  .home {
+    padding-bottom: 10px;
+  }
+  .work {
+    padding-bottom: 10px;
+  }
+  .aboutus {
+    padding-bottom: 10px;
+  }
+  #hireus {
+    width: 105%;
+    padding: 10px;
+    height: 25px;
+    justify-content: center;
+  }
+  h1 {
+    margin-top: 30px;
+  }
+  .button {
+    width: 90%;
+    height: 40px;
+    display: flex;
+    margin-left: 10px;
+    margin-right: 400px;
+  }
+  #info {
+    padding-right: 5px;
+  }
+  }
